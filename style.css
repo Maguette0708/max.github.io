@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', serif;
+}
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid#717171;
+}
+nav h1{
+	color: #717171;
+	font-family: 'Playfair Display',sans-serif;
+	font-size: 30px;
+	margin-top: 3px ;
+	margin-right: 300px;
+	margin-bottom: 1px;
+}
+nav .onglets{
+	margin-top: 3px;
+	margin-left: 300px;
+
+}
+nav .onglets a{
+	text-decoration: none;
+	color: #000;
+	margin-right: 10px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url(Images/background-header.jpg);
+	background-size: cover;
+	color: #fff;
+	padding: 40px;
+}
+header h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+}
+header h4{
+	margin-top: -20px;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+header button{
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #000;
+	border:none;
+	font-size: 20px;
+	font-family: 'Playfair Display',serif;
+	outline: none;
+	cursor: pointer;
+}
+
+.main{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main .content .card{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+.main .content .card .left{
+	flex: 0 0 30%;
+	padding: 30px;
+	background-color: #000;
+	color:#fff ;
+}
+.main .content .card.right{
+	flex: 0 0 70%
+}
+.main .content .card .right img{
+	height: 300px;
+	width: 400px;
+	margin-top: 5px;
+}
+
+footer{
+	margin-top: 40px;
+	border-top: 5px solid #6f6f6f;
+	background-color: #000;
+	color: #fff;
+	padding: 30px 100px
+}
+footer h1{
+	font-family: 'Playfair Display',serif;
+	border-bottom: 5px solid #fff;
+	width: 25%;
+	padding-bottom: 5px;
+}
+footer .services{
+	margin-top: -10px;
+	display: flex;
+}
+footer .services .service{
+	margin-right: 30px;
+	padding: 10px;
+}
+footer .services .service p{
+	max-width: 300px;
+}
+
+footer #contact{
+	color: rgb(181, 181, 181);
+}
+@media screen and (max-width:680px) {
+	nav .onglets{
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+	.main .card{
+		margin: 10px;
+	}
+	.main .content .card .right img{
+		height: 200px;
+		width: 100px;
+		margin-top: 0px;
+	}
+	.main .content .card{
+		display: block;
+	}
+	footer {
+		padding: 30px;
+	}
+}
